@@ -1,12 +1,12 @@
 from symbol import parameters
 from twilio.rest import Client
 import requests
-API_KEY = "a83ced151a24947b0efb88bc61f9c4a3"
+API_KEY = "your api key from twillo"
 MY_LAT=13.106745
 MY_LNG=80.096954
-MY_NUM= "+14155238886"
-ACCOUNT = 'AC07c830c2d358f52502c62f40c27f9c1e'
-AUTH = "a7cfcea2202ab01ef5491cf8a4865316"
+MY_NUM= "+your number"
+ACCOUNT = 'twillo acount'
+AUTH = "your twillo auth"
 
 parameters = {
     "lat":MY_LAT,
@@ -31,5 +31,6 @@ if is_rain:
         body="It's going to rain today. Remember to bring an umbrella",
         to='whatsapp:+919573585568'
     )
+
 
     print(message.sid)
